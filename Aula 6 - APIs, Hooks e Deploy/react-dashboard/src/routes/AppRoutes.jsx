@@ -5,6 +5,7 @@ import Usuarios from "../pages/Usuarios";
 import Relatorios from "../pages/Relatorios";
 import Configuracoes from "../pages/Configuracoes";
 import PageNotFound from "../pages/PageNotFound";
+import Times from "../pages/Times";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
         path: "configuracoes",
         element: <Configuracoes />,
       },
+      {
+        path: "times",
+        element: <Times />,
+      }
     ],
   },
 ]);

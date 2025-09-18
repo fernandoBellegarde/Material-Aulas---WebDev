@@ -7,6 +7,7 @@ export default function Sidebar() {
       <nav className="flex flex-col gap-3">
         <Link to="/" className="hover:bg-gray-700 p-2 rounded">Home</Link>
         <Link to="usuarios" className="hover:bg-gray-700 p-2 rounded">Usuários</Link>
+        <Link to="times" className="hover:bg-gray-700 p-2 rounded">Times</Link>
         <Link to="relatorios" className="hover:bg-gray-700 p-2 rounded">Relatórios</Link>
         <Link to="configuracoes" className="hover:bg-gray-700 p-2 rounded">Configurações</Link>
       </nav>
