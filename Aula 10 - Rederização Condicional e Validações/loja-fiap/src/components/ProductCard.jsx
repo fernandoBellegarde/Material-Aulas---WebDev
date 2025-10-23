@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 
-export default function ProductCard({ id, title, price, image, rating}) {
+export default function ProductCard({ id, title, price, image, rating }) {
   return (
-    <div className={`bg-white rounded-lg shadow p-4 hover:scale-105 transition transform`}>
-      <img src={image} alt={title} className="w-full h-48 object-contain mb-4"/>
+    <div
+      className={`bg-white rounded-lg shadow p-4 hover:scale-105 transition transform ${
+        price < 500 ? "bg-red-500" : "bg-blue-500"
+      }`}
+    >
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-48 object-contain mb-4"
+      />
       <h3 className="font-bold text-lg">{title}</h3>
 
       {rating && (
